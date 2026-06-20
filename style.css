@@ -107,6 +107,16 @@ header {
     transition: background-color 0.2s;
 }
 
+.img-flex{
+    display: flex;
+    gap: 10rem;
+    margin-bottom: 20px;
+}
+img{
+    height: 300px;
+    width: 200px;
+}
+
 .section-container {
     max-width: 800px;
     margin: 0 auto;
