@@ -37,6 +37,24 @@ body.dark-mode .task-item {
     border: 1px solid #374151;
 }
 
+
+
+body.dark-mode .resources-section {
+    background-color: #111827 !important;
+}
+body.dark-mode .resources-grid {
+    border-color: #374151 !important;
+}
+body.dark-mode .res-subject, 
+body.dark-mode .res-links {
+    background-color: #1f2937 !important;
+    border-color: #374151 !important;
+}
+body.dark-mode .res-subject:hover {
+    background-color: #374151 !important;
+}
+
+
 header {
     position: sticky;
     top: 0;
@@ -209,6 +227,61 @@ h2 {
     background-color: #ef4444;
     color: white;
 }
+
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Exact 2-column layout */
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid;
+}
+
+.res-header {
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 12px 20px;
+}
+
+.res-subject {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 20px;
+    border-top: 1px solid;
+    transition: background-color 0.2s;
+}
+
+.res-subject span {
+    font-size: 1.5rem;
+}
+
+.res-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.res-links a {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.res-links a:hover {
+    text-decoration: underline;
+}
+
 
 
 .contact-section {
